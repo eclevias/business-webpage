@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crazy Cow Steak House</title>
+        <link rel="icon" type="image" href="cow-removebg-preview.png">
+        <style>
+        
+            body {
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                min-height: 100vh;
+                font-family:'Helvetica', sans-serif;
+                color: white;
+            }
+        
+            .form-card {
+                background: #1a1a1a;
+                width: 100%;
+                max-width: 450px;
+                padding: 40px;
+                border-radius: 12px;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+                overflow: hidden;
+            }
+
+            .form-header {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+
+            .logo {
+                float: left;
+                margin: auto;
+            }
+            
+            .form-header h2 {
+                color: red;
+                font-size: 22px;
+                margin-top: 0;
+            }
+        
+            .name-row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 15px;
+            }
+        
+            .input-group {
+                margin-bottom: 20px;
+            }
+            
+            label {
+                font-weight: bold;
+            }
+        
+            input {
+                width: 100%;
+                padding: 5px;
+                border: 1px solid #d1d5db;
+                border-radius: 7px;
+                font-size: 15px;
+                transition: all 0.2s ease;
+            }
+ 
+            input[type="submit"] {
+                text-align: center;
+                background-color: red;
+                color: white;
+                align-items: center;
+                width: 100%;
+                cursor: pointer;
+                padding: 15px;
+            }
+            
+            input[type="submit"]:hover {
+                background-color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="form-card">
+            <div class="form-header">
+                <div class="logo">
+                    <img src="cow-removebg-preview.png" alt="logo of the business" width="100px" height="100px">
+                </div>
+                <h2>Welcome to <span>Crazy Cow Steak House Registration Form!</span></h2>
+                <p>Enter the information below to access the full webpage.</p>
+                
+            </div>
+        <form action="mainweb.html" method="GET">
+            <div class="name-row">
+                <div class="input-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" placeholder="Enter your first name here" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" placeholder="Enter your last name here" required>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label for="idf">Username or Email:</label>
+                <input type="text" id="idf" placeholder="Enter your username or email here" required>
+            </div>
+            
+            <div class="input-group">
+                <label for="pswd">Password:</label>
+                <input type="password" id="pswd" placeholder="Enter your password here" required>
+            </div>
+            
+            <input type="submit" value="Submit">
+            </div>
+        </form>
+    </body>
+</html>

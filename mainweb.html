@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Crazy Cow Steak House</title>
+        <link rel="icon" type="image" href="cow-removebg-preview.png">
+        <style>
+            body {
+                font-family: 'Helvetica', sans-serif;
+                margin: 0;
+                background-color: #f9f9f9;
+            }
+            
+            header {
+                background-color: #1a1a1a;
+                color: white;
+                text-align: center;
+                border-bottom: 5px solid #d32f2f;
+                color: gray;
+            }
+            
+            header h3 {
+                margin: 0;
+                color: #ffeb3b;
+            }
+            
+            header h1 {
+                margin: 10px;
+                color: #d32f2f;
+            }
+            
+            .logo {
+                float: left;
+                margin: auto;
+            }
+            
+            nav {
+                background-color: #333;
+                padding: 10px;
+                text-align: center;
+            }
+            
+            nav a {
+                color: white;
+                margin: 0 15px;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            
+            nav a:hover {
+                color: #d32f2f;
+            }
+            
+            aside {
+                width: 25%; 
+                height: auto;
+                float: right;
+                background: white; 
+                padding: 20px; 
+                border-radius: 8px; 
+                box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+                height: fit-content;
+                margin: 5px;
+            }
+            
+            .card {
+                background-color: white;
+                padding: 15px;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+                transition: 0.3s;
+                margin-bottom: 15px;
+            }
+
+            .card:hover {
+                transform: translateY(-3px);
+                box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+            }
+
+            section {
+                margin-bottom: 15px;
+                width: 66%;
+                float: left;
+            }
+            
+            #prices, #gallery, #order {
+                width: 100%;
+            }
+            h2 {
+                border-left: 5px solid #d32f2f;
+                color: gray;
+                text-transform: uppercase;
+                padding-left: 5px;
+                margin: 5px;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 10px;
+            }
+            
+            th {
+                background-color: #d32f2f;
+                color: white;
+                text-transform: uppercase;
+                padding: 5px;
+            }
+            
+            td {
+                padding: 5px;
+                border-bottom: 1px solid #eee;
+            }
+            
+            .price {
+                text-align: right;
+                font-weight: bold;
+                color: #d32f2f;
+                width: 100px;
+            }
+            
+            .best-seller {
+                background-color: #fff9c4;
+                font-weight: bold;
+            }
+            
+            .gallery-grid { 
+                display: grid; 
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; 
+            }
+            .img-box { 
+                background: #ddd; 
+                height: 150px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                color: #777; 
+                border-radius: 4px; 
+            }
+            
+            form {
+                background-color: #fff;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+            
+            input, select, textarea {
+                width: 100%;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+            
+            input[type="submit"] {
+                background-color:#d32f2f;
+                color: white;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            
+            input[type="submit"]:hover {
+                background-color: yellow;
+            }
+            
+            footer {
+                clear: both;
+                background-color: #1a1a1a;
+                color: white;
+                padding: 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="cow-removebg-preview.png" alt="logo of business" height="100px" width="100px">
+            </div>
+            <h3>Welcome to</h3>
+            <h1>🐮 Crazy Cow Steak House!</h1>
+            <p><i>"The Craziest Steaks in Town"</i></p>
+        </header>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#products">Products</a>
+            <a href="#prices">Price List</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#order">Order Now</a>
+        </nav>
+        
+        <aside id="contact">
+                <h3>Contact Info</h3>
+                <p>📍 <strong>Location:</strong>4L Gasoline Station, San Leonardo, N.E.</p>
+                <p>📧<strong>Email:</strong>abusiness31@yahoo.com</p>
+                <p>📱<strong>Tiktok:</strong><a href="https://www.tiktok.com/@crazycowsteakhouse?_r=1&_t=ZS-93wMXzg3NdV" alt="visit Now!">@crazycowsteakhouse</a></p>
+                <p>📱<strong>Facebook:</strong><a href="https://www.facebook.com/share/18AgxkYo6s/">CRAZY COW STEAK HOUSE</a></p>
+                <p>🕒 <strong>Hours:</strong> 10:00 AM - 10:00 PM</p>
+            </aside>
+            
+        <section id="about">
+            <h2>About Us</h2>
+            
+            <div class="card">
+                <p>Welcome to <strong>Crazy Cow Steak House</strong>. We specialize in premium butter-aged seasoned steaks and unlimited dining experiences. Our mission is to provide high-quality meat cuts and a variety of sizzlers that guarantee 100% satisfaction.</p>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Our Featured Products</h2>
+            <div class="card">
+            <article>
+                <h3>Unlimited Steak Deals</h3>
+                <p>Our star offering includes <strong>Unli Steak for only ₱569</strong>. This set comes with an incredible spread of sides including Carbonara, Hungarian Sausage, Java Rice, and more. For the ultimate experience, add Unli Wagyu Cubes for just +₱180.</p>
+            </article>
+            <article>
+                <h3>Premium Cuts</h3>
+                <p>We serve 250g portions of USDA Choice Ribeye, Australian Porterhouse, and Australian T-Bone for those looking for elite quality.</p>
+            </article>
+            </div>
+        </section>
+        <section id="prices">
+            <div class="card">
+                <table>
+                    <tr><th colspan="2">CRAZY SIZZLERS & BEST SELLERS</th></tr>
+                    <tr class="best-seller"><td>Baby Back Ribs (500g) — BEST SELLER</td><td class="price">₱395</td></tr>
+                    <tr><td>Japanese Wagyu Cubes</td><td class="price">₱229</td></tr>
+                    <tr><td>Sizzling Wagyu Cubes</td><td class="price">₱249</td></tr>
+                    <tr><td>Creamy Truffle Pasta</td><td class="price">₱199</td></tr>
+                    <tr><td>Pesto</td><td class="price">₱189</td></tr>
+                    <tr><td>Chicken Skin</td><td class="price">₱180</td></tr>
+                    <tr><td>Sizzling Burger Steak</td><td class="price">₱179</td></tr>
+                    <tr><td>Sizzling Fried Chicken</td><td class="price">₱169</td></tr>
+                    <tr><td>Jumbo Fries (Cheese/Sour Cream)</td><td class="price">₱159</td></tr>
+                    <tr><td>Sizzling Hungarian Sausage</td><td class="price">₱99</td></tr>
+                </table>
+
+                <table>
+                    <tr><th colspan="2">PREMIUM CUTS (250g)</th></tr>
+                    <tr><td>USDA Choice Ribeye</td><td class="price">₱639</td></tr>
+                    <tr><td>Australian Porterhouse</td><td class="price">₱479</td></tr>
+                    <tr><td>Australian T-Bone</td><td class="price">₱449</td></tr>
+                </table>
+
+                <table>
+                    <tr><th colspan="2">ALA CARTE SETS</th></tr>
+                    <tr>
+                        <td><strong>Set A:</strong> Steak, Java Rice, Mashed Potato, Fries, Gravy</td>
+                        <td class="price">₱268</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Set B:</strong> Steak, Java Rice, Hungarian Sausage, Mashed Potato, Fries, Gravy</td>
+                        <td class="price">₱318</td>
+                  </tr>
+                </table>
+
+                <table>
+                        <tr><th colspan="2">SOUPS, SIDES & DRINKS</th></tr>
+                        <tr><td>Clam Chowder</td><td class="price">₱179</td></tr>
+                        <tr><td>Truffle Mushroom Soup</td><td class="price">₱159</td></tr>
+                        <tr><td>Mashed Potato / Steamed Veggies / Baby Sweet Corn</td><td class="price">₱50</td></tr>
+                        <tr><td>Pineapple Juice / Soda in Can</td><td class="price">₱50</td></tr>
+                        <tr><td>Java Rice</td><td class="price">₱25</td></tr>
+                        <tr><td>Bottled Water</td><td class="price">₱25</td></tr>
+                </table>
+
+            </div>
+        </section>
+        
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="card">
+                <div class="gallery-grid">
+                    <img src="meal.jpg" alt="meal" class="img-box">
+                    <img src="steak.jpg" alt="steak" class="img-box">
+                    <img src="int.jpg" alt="interior" class="img-box">
+                    <img src="crew.jpg" alt="crew" class="img-box">
+                </div>
+            </div>
+        </section>
+        <section id="order">
+            <h2>Place an Order / Inquiry</h2>
+            <div class="card">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Your Name" required>
+                
+                    <label>Select Your Meal:</label>
+                    <select>
+                        <option>Unli Steak (₱569)</option>
+                        <option>Baby Back Ribs (₱395)</option>
+                        <option>Ala Carte Set A (₱268)</option>
+                        <option>Ala Carte Set B (₱318)</option>
+                    </select>
+
+                    <label for="ins">Instructions:</label>
+                    <textarea rows="4" placeholder="Rare, Medium Rare, No Gravy, etc." id="ins"></textarea>
+                
+                    <input type="submit" value="Place Order">
+                </form>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2026 Crazy Cow Steak House. All Rights Reserved.</p>
+            </footer>
+    </body>
+</html>
